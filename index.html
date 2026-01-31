@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacts Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Contacts Manager</h1>
+
+  <!-- Auth -->
+  <section id="auth">
+    <h2>Register / Login</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </section>
+
+  <!-- Create Contact -->
+  <section id="create-contact" class="hidden">
+    <h2>New Contact</h2>
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="phone" placeholder="Phone" />
+    <button onclick="createContact()">Add Contact</button>
+  </section>
+
+  <!-- Contacts List -->
+  <section id="contacts" class="hidden">
+    <h2>Your Contacts</h2>
+    <ul id="contacts-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
